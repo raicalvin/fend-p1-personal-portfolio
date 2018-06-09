@@ -38,7 +38,7 @@
     font-size: 16px;
   }
   /*PROJECTS PHONE*/
-  .box-project-item {
+  .grid-project-item {
     width: 80%;
     margin: 2%;
     margin-right: auto;
@@ -160,7 +160,7 @@
     font-size: 24px;
   }
   /*PROJECTS TABLET*/
-  .box-project-item {
+  .grid-project-item {
     width: calc(92%/2);
     margin: 2%;
     text-align: center;
@@ -236,9 +236,9 @@
     width: 1200px;
     margin: auto;
   }
-  .container-projects-content {
-    display: flex;
-    flex-wrap: wrap;
+  .grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
     /*justify-content: space-between;*/
     /*justify-content: space-evenly;*/
   }
@@ -271,7 +271,7 @@
     width: 100%;
   }
   /*PROJECTS DESKTOP*/
-  .box-project-item {
+  .grid-project-item {
     width: calc(76%/3);
     margin: 4%;
     text-align: center;
