@@ -1,0 +1,252 @@
+/*Applied to all elements in the document*/
+* {
+  font-family: sans-serif; /*default font-family for*/
+  margin: 0; /*normalize any browser-specific margins*/
+  padding: 0; /*normalize any browser-specific padding*/
+}
+/*Margins are set temporarily to outline divs*/
+div {/*
+  border-style: solid;
+  border-width: thin;
+  margin: 2px;*/
+}
+span {
+  display: inline-block;
+  font-family: 'Quicksand', Arial, sans-serif;
+  color: black; /*
+  border-style: dashed;
+  border-width: thin;
+  margin: 5px; */
+}
+img {
+  width: 100%;
+  vertical-align: middle; /*Fixes 3px bottom margin issue*/
+}
+
+/*HEADER*/
+#header {
+  background-color: #0096FF;
+}
+.box-header {
+  display: inline-block;
+  margin: auto;
+}
+
+/*HERO*/
+#hero {
+  background-image: url('../img/slide_12_tunnel_blur.png');
+  width: 100%;
+}
+.container-hero {
+  /*This parent should be relative so that the sub-hero-box child can be placed relative to this parent.*/
+  position: relative;
+}
+.box-sub-hero {
+  /*This child is placed relative to the parent div, hero-container, using an absolute positioning style.*/
+  position: absolute;
+  width: 50%;
+  top: 50%;
+  right: 0;
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
+  background-color: #0096FF;
+  display: flex;
+  align-items: center;
+}
+.nice-to-meet-you {
+  color: #fff;
+}
+
+/*PROJECTS*/
+#main-content {
+  background-color: #222222;
+}
+.project-image {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.box-project-subheading {
+  display: flex;
+  justify-content: space-around;
+}
+.box-project-item {
+  /*position: relative;*/
+}
+.project-sub-title {
+  /*position: absolute;
+  bottom: 95%;
+  width: 100%;*/
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  font-family: 'Comfortaa';
+  font-weight: normal;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+.box-project-item > p {
+  color: #222;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-size: 18px;
+  background-color: white;
+  /*margin-bottom: 2px;*/
+  font-weight: normal;
+  border-style: solid;
+  border-color: white;
+  border-width: 2px;
+}
+.button {
+  background-color: white;
+  width: 100%;
+  border: none;
+  color: #222222;
+  font-size: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin: 0;
+  font-family: 'Quicksand';
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.button-left {
+  border-bottom-left-radius: 15px;
+  margin-right: 0px;
+}
+.button-right {
+  border-bottom-right-radius: 15px;
+  margin-left: 0px;
+}
+.button-single {
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.button:hover {
+  background-color: #0096FF;
+  color: white;
+}
+
+/*MODAL*/
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+.modal-content {
+  background-color: white;
+  margin: 20% auto;
+  padding: 25px;
+  border: 1px solid #888;
+  width: 30%;
+  border-radius: 25px;
+}
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+.modal-content-heading {
+  margin-bottom: 6px;
+  text-align: center;
+  font-family: 'Cabin';
+  font-weight: normal;
+  color: #222;
+}
+.modal-content-subheading {
+  margin-bottom: 18px;
+  text-align: center;
+  color: #222;
+  font-family: 'Cabin';
+}
+.modal-content-description {
+  text-align: center;
+  color: #222;
+}
+.android-theme {
+  color: #A4C639;
+}
+.website-theme {
+  color: #0095FF;
+}
+.modeling-theme {
+  color: #9b59b6;
+}
+.programming-theme {
+  color: #FF8000;
+}
+.personal-theme {
+  color: #FF0000;
+}
+
+/*BANNER*/
+.box-banner-1 {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 112px;
+  padding-bottom: 112px;
+}
+
+/*EDUCATION*/
+#education {
+  background-color: #0096FF;
+}
+
+/*RESUME*/
+#resume-picture-circle {
+  border-radius: 50%;
+  padding: 25%;
+}
+.resume-button {
+  background-color: transparent;
+  font-family: 'Cabin';
+  border: 2px solid;
+  border-color: #0096FF;
+  color: #0096FF;
+  padding: 12px 32px;
+  text-align: center;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.resume-button:hover {
+  background-color: #0096ff;
+  color: white;
+}
+
+/*CONTACT*/
+#contact {
+  background-color: #222222
+}
+/*FOOTER*/
+#footer {
+  background-color: #0096FF;
+}
+.footer-title {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  justify-content: center;
+}
+.footer-text {
+  color: white;
+}

@@ -1,0 +1,433 @@
+<!DOCTYPE html> <!--Hello-->
+<html lang="en">
+  <!--The <head> tag is an element that contains all head elements including the title for the document, scripts, meta information, associated CSS files/links, associated JavaScript files/links, the character sets being used, keywords, authors, and descriptions.-->
+  <head>
+    <!--The following meta tag allows your website to display any Unicode characters-->
+    <meta charset="UTF-8">
+    <!--Make sure you specify the viewport as shown below!-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--The below will display the author name(s)-->
+    <meta name="author" content="Calvin Simran Rai">
+    <!--This is the description of the web page-->
+    <meta name="description" content="A personal portfolio by Calvin Rai.">
+    <!--The <title> tag displayes the document's title (that shows up on browser tabs)-->
+    <title>Calvin Rai's Portfolio</title>
+    <!--Stylesheets-->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/resp-style.css" rel="stylesheet">
+    <!--Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+    <!--Script code for using FontAwesome fonts-->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
+  </head>
+  <!--The body encapsulates all of the HTML that will be shown on the webpage-->
+  <body>
+
+    <!--HEADER-->
+    <div id="header">
+      <div class="container">
+        <div class="box box-header">
+          <span class="header-title">Calvin Simran Rai</span>
+        </div>
+      </div>
+    </div>
+
+    <!--HERO-->
+    <div id="hero">
+      <div class="container container-hero">
+        <div class="box box-hero">
+          <img src="img/hero_main.png">
+        </div>
+        <div class="box-sub-hero">
+          <div class="box-sub-hero-left">
+            <img src="img/pic_calvin_1.png" class="picture_calvin_1">
+          </div>
+          <div class="box-sub-hero-right">
+            <span class="nice-to-meet-you">Nice to meet you.<br>I'm Calvin!</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--PROJECTS-->
+    <div id="main-content">
+      <!--This is the heading title-->
+      <div class="container container-projects-heading">
+        <span class="section-title">Projects</span>
+      </div>
+      <!--This is the container for all the project items
+    -->
+      <div class="container container-projects-content">
+        <!--Project Quizroid-->
+        <div class="box-project-item">
+          <p class="project-sub-title">Quizroid Android App</p>
+          <img src="img/slide_1_quizroid.png" alt="Quizroid Android Application">
+          <div class="box-project-subheading">
+            <button onclick="location.href='https://github.com/raicalvin/abnd-p4-quizroid'" class="button button-left">GitHub</button>
+            <button onclick="openModalQuizroid()" class="button button-right ">About</button>
+          </div>
+        </div>
+        <!--Modal Quizroid-->
+        <div class="modal modal-quizroid">
+          <div class="modal-content">
+            <div class="modal-inner-content">
+              <span onclick="closeModalQuizroid()" class="close">&times;</span>
+              <h2 class="modal-content-heading">Quizroid Android App</h2>
+              <h4 class="modal-content-subheading android-theme">Android Application</h4>
+              <p class="modal-content-description">This application was created for my Android Basics Nanodegree program. We were assigned a task to create a short quiz on any topic and had to include proper layout formats and guidelines, a variety of questions utilizing TextViews, Buttons, Checboxes, RadioButtons, ScrollViews and more.<br><br>I decided to implement a feature of ScrollView that would scroll to the next or previous question on the button click using an ObjectAnimator. <br><br>I also wanted to create a simple, clean, and modern user interface. The rounded buttons complimented the the rounded backgrounds of the questions and the white on light blue provided a claming contrast to make the app feel more immersive.</p>
+            </div>
+          </div>
+        </div>
+
+        <!--Project Dad's Website-->
+        <div class="box-project-item">
+          <p class="project-sub-title">My Dad's Personal Website</p>
+          <img src="img/slide_3_dads_website.png" alt="A Personal Website For My Fathers' Books">
+          <div class="box-project-subheading">
+              <button onclick="location.href='http://parmindersinghrai.net/'" class="button button-left">Site</button>
+            <button onclick="openModalDadsWebsite()" class="button button-right">About</button>
+          </div>
+        </div>
+        <!--Modal Dads Website-->
+        <div class="modal modal-dads-website">
+          <div class="modal-content">
+            <div class="modal-inner-content">
+              <span onclick="closeModalDadsWebsite()" class="close">&times;</span>
+              <h2 class="modal-content-heading">An Authors Personal Book Website</h2>
+              <h4 class="modal-content-subheading website-theme">Website</h4>
+              <p class="modal-content-description">This was one of my first websites I created when learning web development in 2017. The site was created to help advertise the books my dad writes and sells. The webpage was built to be responsive and include links to the various books my dad had had written.<br><br>Due to inactivity and low traffic volume, the website will be taken down on Jul 8, 2017. A new website is in currently in conceptual design which improves the site layout, includes a cleaner black and white theme, and a few improvements to contact information.</p>
+            </div>
+          </div>
+        </div>
+
+        <!--Project Linear Interpolator App-->
+        <div class="box-project-item">
+          <p class="project-sub-title">Linear Interpolator App</p>
+          <img src="img/slide_9_linear.png" alt="Linear Interpolation Android Application">
+          <div class="box-project-subheading">
+            <button  onclick="location.href='https://play.google.com/store/apps/details?id=com.a29moon.linearinterpolator'" class="button button-left">Google Play</button>
+            <button onclick="openModalLinearInteprolator()" class="button button-right">About</button>
+          </div>
+        </div>
+        <!--Modal Linear Interpolation App-->
+        <div class="modal modal-linear-interpolation-app">
+          <div class="modal-content">
+            <div class="modal-inner-content">
+              <span onclick="closeModalLinearInterpolator()" class="close">&times;</span>
+              <h2 class="modal-content-heading">Linear Interpolation App</h2>
+              <h4 class="modal-content-subheading android-theme">Android Application</h4>
+              <p class="modal-content-description">Of the many handful of linear interpolation applications on Google Play, none had a clean and simple UI. I wanted to create an application that was very easy to use and one that had a consistent and clean user interface.<br><br>I decided to go with a purple and black theme to provide sharp contrast that gave the app a sense of a really technical calculator.<br><br>With input validation, clean fonts and colors, and a results display, and a window that boldy displays the interpolated value, this app provides for a clean and easy-to-use application.</p>
+            </div>
+          </div>
+        </div>
+
+        <!--Project The Dark Sand-->
+        <div class="box-project-item">
+          <p class="project-sub-title">Unity3D Game Start Screen</p>
+          <img src="img/slide_2_dark_sand.png" alt="Unity3D Project: The Dark Sand">
+          <div class="box-project-subheading">
+            <button  onclick="location.href='https://portfolium.com/entry/unity3d-game-start-screen-project'" class="button button-left">Portfolium</button>
+            <button onclick="openModalDarkSand()" class="button button-right">About</button>
+          </div>
+        </div>
+        <!--Modal The Dark Sand-->
+        <div class="modal modal-dark-sand">
+          <div class="modal-content">
+            <div class="modal-inner-content">
+              <span onclick="closeModalDarkSand()" class="close">&times;</span>
+              <h2 class="modal-content-heading">The Dark Sand</h2>
+              <h4 class="modal-content-subheading modeling-theme">Unity3D Project</h4>
+              <p class="modal-content-description">This was a fun side-project created using asset packs, Unity3D, and iMovie. The concept for this project was to create a start-screen for a fictional video game.<br><br>The camera pans over the scenery created, flwoing through the wooden deck, then eventually turns upwards to the sky where the game title and 'Press Start' appear right when the sun comes into view.<br><br>The project was created using asset packs and the recording for the video was done using Unity's built-in camera module settings and workflow.</p>
+            </div>
+          </div>
+        </div>
+
+        <!--Project Business Card-->
+        <div class="box-project-item">
+          <p class="project-sub-title">Business Card App</p>
+          <img src="img/slide_4_business_card.png" alt="Fictional Business Card Android Application">
+          <div class="box-project-subheading">
+            <button  onclick="location.href='https://github.com/raicalvin/abnd-p1-business-card-app'" class="button button-left">GitHub</button>
+            <button onclick="openModalBusinessCard()" class="button button-right">About</button>
+          </div>
+        </div>
+        <!--Modal Business Card-->
+        <div class="modal modal-business-card">
+          <div class="modal-content">
+            <div class="modal-inner-content">
+              <span onclick="closeModalBusinessCard()" class="close">&times;</span>
+              <h2 class="modal-content-heading">Business Card App</h2>
+              <h4 class="modal-content-subheading android-theme">Android Application</h4>
+              <p class="modal-content-description">This was another project done for my Android Basics Nanodegree program. We were tasked with creating a single-screen application that displayed information about a fictional business. Contact information had to include the business name, phone number, address, and description about the business.<br><br>A ScrollView was used to display all the required information for this project. Additional components including multiple TextViews and a couple ImageViews.</p>
+            </div>
+          </div>
+        </div>
+
+        <!--Project Python Quiz-->
+        <div class="box-project-item">
+          <p class="project-sub-title">Python Programming Quiz</p>
+          <img src="img/slide_6_python_quiz.png" alt="Python Programming Quiz">
+          <div class="box-project-subheading">
+            <button onclick="location.href='https://portfolium.com/entry/python-programming-quiz'" class="button button-left">Portfolium</button>
+            <button onclick="openModalPythonQuiz()" class="button button-right">About</button>
+          </div>
+        </div>
+        <!--Modal Python Quiz-->
+        <div class="modal modal-python-quiz">
+          <div class="modal-content">
+            <div class="modal-inner-content">
+              <span onclick="closeModalPythonQuiz()" class="close">&times;</span>
+              <h2 class="modal-content-heading">Python Programming Quiz</h2>
+              <h4 class="modal-content-subheading programming-theme">Python Program</h4>
+              <p class="modal-content-description">This was a project I developed in my Intro to Programming Nanodegree where we were tasked with creating a word quiz. Our script would allow us to choose a difficulty and present to us questions with fill-in-the-blank style questions. Guessing the word correctly would display a correct answer and guessing incorrectly would take away a life.<br><br>Concepts utlizied in this quiz were manipulating strings, creating and using functions, string comparison, loops, control flow, and conditionals, and working with data structures to hold questions, answers, and lives remaining.</p>
+            </div>
+          </div>
+        </div>
+
+        <!--Project 4SMA-->
+        <div class="box-project-item">
+          <p class="project-sub-title">Modal Analysis Android App</p>
+          <img src="img/slide_7_4sma.png" alt="Modal Analysis Android Application for 4-Story Building">
+          <div class="box-project-subheading">
+            <button onclick="location.href='https://play.google.com/store/apps/details?id=com.a29moon.linearinterpolator'" class="button button-left">Google Play</button>
+            <button onclick="openModalSma4()" class="button button-right">About</button>
+          </div>
+        </div>
+        <!--Modal sma4-->
+        <div class="modal modal-sma4">
+          <div class="modal-content">
+            <div class="modal-inner-content">
+              <span onclick="closeModalSma4()" class="close">&times;</span>
+              <h2 class="modal-content-heading">Modal Analysis Application</h2>
+              <h4 class="modal-content-subheading android-theme">Android Application</h4>
+              <p class="modal-content-description">This Android application was developed for a former professor at my undergraduate institution. One of my structural engineering professor wanted an application where he could use to teach concepts in earthquake engineering, modal analysis, and building movement behavior.<br><br>This was my very first Android app and I had to use two libraries (GraphView and JAMA) to (1) display a graph that would depict building movement in different modes and (2) use a JAMA library to perform the matrix algebra required to obtain Eigensolutions representing the buildings' mode, frequencies, periods, mass participation factor, response time, and more.<br><br>The application itself allows students to enter in mass and stiffness values for column supports for a typical 4-story building the the program will calculate a variety of eqarthquake engineering parameters based on these values. The student can also flip through the modes of the building seeing how the floors would behave in different mdoes.</p>
+            </div>
+          </div>
+        </div>
+
+        <!--Project Galaxy Website-->
+        <div class="box-project-item">
+          <p class="project-sub-title">The Milky Way Galaxy Website</p>
+          <img src="img/slide_5_galaxy_website.png" alt="A Milky Way Galaxy Website">
+          <div class="box-project-subheading">
+            <button class="button button-left">GitHub</button>
+            <button onclick="openModalGalaxy()" class="button button-right">About</button>
+          </div>
+        </div>
+        <!--Modal Galaxy-->
+        <div class="modal modal-galaxy">
+          <div class="modal-content">
+            <div class="modal-inner-content">
+              <span onclick="closeModalGalaxy()" class="close">&times;</span>
+              <h2 class="modal-content-heading">Milky Way Galaxy Website</h2>
+              <h4 class="modal-content-subheading website-theme">Website</h4>
+              <p class="modal-content-description">This was my very first website in my Intro to Programming Nanodegree. We were allowed to choose a topic that interested us and develop a website about it. Naturally, my history of interest in cosmology led me to develop a website showcasing some of the most amazing things in our own Milky Way Galaxy.</p>
+            </div>
+          </div>
+        </div>
+
+        <!--Project Quidditch Score Keeper-->
+        <div class="box-project-item">
+          <p class="project-sub-title">Quidditch Score Keeper App</p>
+          <img src="img/slide_10_quidditch.png" alt="Quidditch Score Keeper Android Application">
+          <div class="box-project-subheading">
+            <button onclick="location.href='https://github.com/raicalvin/abnd-p3-quidditch-score-keeper'" class="button button-left">GitHub</button>
+            <button onclick="openModalQuidditchScoreKeeper()" class="button button-right">About</button>
+          </div>
+        </div>
+        <!--Modal Quidditch Score Keeper-->
+        <div class="modal modal-quidditch-score-keeper">
+          <div class="modal-content">
+            <div class="modal-inner-content">
+              <span onclick="closeModalQuidditchScoreKeeper()" class="close">&times;</span>
+              <h2 class="modal-content-heading">Quidditch Score Keeper</h2>
+              <h4 class="modal-content-subheading android-theme">Android Application</h4>
+              <p class="modal-content-description">This was an application we were tasked with creating in our Android Basics Nanodegree program. We had to use Java to write a program that would keep track of team scores for any sport (of course, I had to choose Quidditch!).<br><br>Buttons, ImageViews, textViews, and RealtiveLayouts were at the core of the layout. Functions were used to handl onCLick events and update variables for each teams' score.</p>
+            </div>
+          </div>
+        </div>
+
+        <!--Custom PC-->
+        <div class="box-project-item">
+          <p class="project-sub-title">Custom PC Project</p>
+          <img src="img/slide_8_custom_pc.png" alt="Custom PC Project">
+          <div class="box-project-subheading">
+            <button onclick="openModalCustomPC()" class="button button-single">About</button>
+          </div>
+        </div>
+        <!--Modal Custom PC-->
+        <div class="modal modal-custom-pc">
+          <div class="modal-content">
+            <div class="modal-inner-content">
+              <span onclick="closeModalCustomPC()" class="close">&times;</span>
+              <h2 class="modal-content-heading">Custom PC</h2>
+              <h4 class="modal-content-subheading android-theme">Personal Project</h4>
+              <p class="modal-content-description">I build my first custom PC! I use this machine primarily for web development, UI design, logo and graphics design, and general programming and software development.<br><br>The PC includes a Core i5 7th Generation i5-7500 LGA 1151 processor, a GeFore GTX 1050 GDDR5 graphics card, and a GigabyteZ270-HD3 motherboard.</p>
+            </div>
+          </div>
+        </div>
+
+        <!--Project Simmy Sigma-->
+        <div class="box-project-item">
+          <p class="project-sub-title">Simmy Sigma</p>
+          <img src="img/slide_11_simmy_sigma.png" alt="Simmy Sigma YouTube Channel for Engineering, Programming, and Education">
+          <div class="box-project-subheading">
+            <button onclick="location.href='https://www.youtube.com/user/SimmySigma'" class="button button-left">YouTube</button>
+            <button onclick="openModalSimmySigma()" class="button button-right">About</button>
+          </div>
+        </div>
+        <!--Modal Simmy Sigma-->
+        <div class="modal modal-simmy-sigma">
+          <div class="modal-content">
+            <div class="modal-inner-content">
+              <span onclick="closeModalSimmySigma()" class="close">&times;</span>
+              <h2 class="modal-content-heading">Simmy Sigma</h2>
+              <h4 class="modal-content-subheading personal-theme">Personal Project</h4>
+              <p class="modal-content-description">Simmy Sigma is a YouTube channel originally created in 2012 after I got my lowest grade in a class ever: a C. Of all the classes I've taken in my life, this is the lowest grade I got. I was frustrated because I knew that I knew the material well, but I just goofed on a test. In an effort to prove to myself that I knew the material well, I began creating video lectures on the topics in that class.<br><br>Eventually I began adding more content on other topics. Today, the channel has supassed 25,000 topics and 4 million views and ocntinues to be a helpful resource for students studying engineering and programming.</p>
+            </div>
+          </div>
+        </div>
+
+        <!--Project Tunnel Rendering-->
+        <div class="box-project-item">
+          <p class="project-sub-title">AutoCAD 3D Rendering Project</p>
+          <img src="img/slide_12_tunnel.png" alt="3D Tunnel AutoCAD Rendering Project">
+          <div class="box-project-subheading">
+            <button class="button button-single" onclick="openModalTunnelRendering()">About</button>
+          </div>
+        </div>
+        <!--Modal Tunnel Rendering-->
+        <div class="modal modal-tunnel-rendering">
+          <div class="modal-content">
+            <div class="modal-inner-content">
+              <span onclick="closeModalTunnelRendering()" class="close">&times;</span>
+              <h2 class="modal-content-heading">AutoCAD Tunnel Rendering</h2>
+              <h4 class="modal-content-subheading modeling-theme">Personal Project</h4>
+              <p class="modal-content-description">This was a fun project created in AutoCAD 3D in my spare time. I've always had a fascination for 3D modeling and in this project, I created a fictional structure and landscape and played around primarily with light placement and orientation, material properties and textures, and rendering techniques.<br><br>The inspiration for this project was to create a place that seemed end-less, with long tunnels running in four directions, intersecting into a central structure that seems to extend vertically indefintely.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!--BANNER-->
+    <div class="banner-1">
+      <div class="container">
+        <div class="box box-banner-1">
+          <span class="banner-text">I'm a designer. A coder. A developer. And I <i class="fas fa-heart"></i> Apple.</span>
+        </div>
+      </div>
+    </div>
+
+    <!--EDUCATION-->
+    <div id="education">
+      <div class="container">
+        <span class="section-title">Nanodegrees</span>
+      </div>
+      <div class="container container-education">
+        <div class="box-education">
+          <img src="img/edu_intro_to_programming.png">
+        </div>
+        <div class="box-education">
+          <img src="img/edu_google_schorlarship.png">
+        </div>
+        <div class="box-education">
+          <img src="img/edu_front_end.png">
+        </div>
+        <div class="box-education">
+          <img src="img/edu_android_basics.png">
+        </div>
+    </div>
+  </div>
+
+    <!--RESUME-->
+    <div id="resume">
+      <div class="container container-resume">
+
+        <div class="box box-resume-half box-resume-half-picture">
+          <img src="img/pic_calvin_1_raw.png" id="resume-picture-circle">
+        </div>
+
+        <div class="box box-resume-half">
+          <div class="inner-resume-box-item">
+            <div class="resume-box-item-inner">
+              <h2 class="resume-heading">Download My Resume!</h2>
+            </div>
+            <div class="resume-box-item-inner">
+              <span class="resume-sub-heading">Interested in knowing more? Download my resume at the link below!</span>
+            </div>
+            <div class="resume-box-item-inner">
+              <a href="docs/resume.pdf" download><button class="resume-button">Download</button></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!--CONTACT-->
+    <div id="contact">
+
+      <div class="container">
+        <span class="section-title">Get In Contact</span>
+      </div>
+
+      <div class="container container-contact">
+        <div class="contact-item-outer">
+          <a href="https://github.com/raicalvin">
+            <div class="box contact-item">
+              <img src="img/icon_github.svg">
+            </div>
+          </a>
+        </div>
+
+        <div class="contact-item-outer">
+          <a href="https://www.linkedin.com/in/csrai/">
+            <div class="box contact-item">
+              <img src="img/icon_linkedin.svg">
+            </div>
+          </a>
+        </div>
+
+        <div class="contact-item-outer">
+          <a href="https://portfolium.com/raicalvin">
+            <div class="box contact-item">
+              <img src="img/icon_portfolium.svg">
+            </div>
+          </a>
+        </div>
+
+        <div class="contact-item-outer">
+          <div class="box contact-item">
+            <img src="img/icon_email.svg">
+          </div>
+        </div>
+
+        <div class="contact-item-outer">
+          <div class="box contact-item">
+            <img src="img/icon_number.svg">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--FOOTER-->
+    <div id="footer">
+      <div class="container footer-title">
+        <span class="footer-text">Made with <i class="fas fa-heart"></i>. By Calvin. (c) 2018</span>
+      </div>
+    </div>
+
+    <!--JavaScript-->
+    <script src="js/script.js"></script>
+
+  </body>
+
+
+
+</html>

@@ -1,0 +1,351 @@
+/*GENERAL RESPONSIVE STYLES*/
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.box {
+  width: auto;
+}
+
+/*MEDIA QUERY FOR PHONE*/
+@media screen and (max-width: 767px) {
+  .section-title {
+    font-size: 24px;
+    color: #FFF;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    margin-left: 16px;
+  }
+  /*HEADER PHONE*/
+  .header-title {
+    font-size: 18px;
+    color: white;
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+  /*HERO PHONE*/
+  .box-sub-hero-left {
+    max-width: 75px;
+    padding: 8px;
+  }
+  .box-hero {
+    width: 100%;
+  }
+  .picture_calvin_1 {
+    border-radius: 125px;
+  }
+  .nice-to-meet-you {
+    font-size: 16px;
+  }
+  /*PROJECTS PHONE*/
+  .box-project-item {
+    width: 80%;
+    margin: 2%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    border-radius: 25px;
+  }
+  /*BANNER PHONE*/
+  .banner-text {
+    font-size: 24px;
+  }
+  /*EDUCATION PHONE*/
+  .box-education {
+    margin: 2%;
+    width: calc(100%);
+    text-align: center;
+  }
+  /*RESUME PHONE*/
+  .container-resume {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .box-resume-half {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .inner-resume-box-item {
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10%;
+  }
+  .resume-box-item-inner {
+    margin: 3%;
+    text-align: center;
+  }
+  .resume-heading {
+    font-family: 'Cabin';
+    font-weight: lighter;
+    font-size: 24px;
+    text-align: center;
+  }
+  .resume-sub-heading {
+    font-size: 16px;
+    text-align: center;
+  }
+  .resume-button {
+    padding: 10px 28px;
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 4px 2px;
+  }
+  .resume-button:hover {
+    background-color: #0096ff;
+    color: white;
+  }
+  #resume-picture-circle {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /*CONTACT PHONE*/
+  .container-contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-bottom: 20px;
+    padding-top: 20px;
+
+  }
+  .contact-item-outer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 25px;
+    -webkit-transition: 0.5s;
+    width: 100%;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+  .contact-item-outer:hover {
+    background-color: white;
+  }
+}
+
+/*MEDIA QUERY FOR TABLET*/
+@media screen and (min-width: 768px) {
+  .section-title {
+    font-size: 36px;
+    color: #FFF;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    margin-left: 24px;
+  }
+  /*HEADER TABLET*/
+  .header-title {
+    font-size: 28px;
+    color: #fff;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    margin-left: 24px;
+  }
+  /*HERO TABLET*/
+  .box-sub-hero-left {
+    max-width: 100px;
+    padding: 10px;
+  }
+  .box-hero {
+    width: 100%;
+  }
+  .picture_calvin_1 {
+    border-radius: 125px;
+  }
+  .nice-to-meet-you {
+    font-size: 24px;
+  }
+  /*PROJECTS TABLET*/
+  .box-project-item {
+    width: calc(92%/2);
+    margin: 2%;
+    text-align: center;
+    border-radius: 25px;
+  }
+  /*BANNER TABLET*/
+  .banner-text {
+    font-size: 32px;
+  }
+  /*EDUCATION TABLET*/
+  .box-education {
+    margin: 2%;
+    width: calc(92% / 2);
+    text-align: center;
+  }
+  /*RESUME TABLET*/
+  .container-resume {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .box-resume-half {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .inner-resume-box-item {
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15%;
+  }
+  .resume-box-item-inner {
+    margin: 3%;
+    text-align: center;
+  }
+  .resume-heading {
+    font-family: 'Cabin';
+    font-weight: lighter;
+    font-size: 36px;
+    text-align: center;
+  }
+  .resume-sub-heading {
+    font-size: 20px;
+    text-align: center;
+  }
+  /*CONTACT TABLET*/
+  .container-contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+  .contact-item-outer {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 25px;
+    -webkit-transition: 0.5s;
+    width: 8%;
+  }
+  .contact-item-outer:hover {
+    background-color: white;
+  }
+}
+
+/*MEDIA QUERY FOR DESKTOP*/
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+    margin: auto;
+  }
+  .container-projects-content {
+    display: flex;
+    flex-wrap: wrap;
+    /*justify-content: space-between;*/
+    /*justify-content: space-evenly;*/
+  }
+  .section-title {
+    font-size: 44px;
+    color: #FFF;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    margin-left: 24px;
+  }
+  /*HEADER DESKTOP*/
+  .header-title {
+    font-size: 48px;
+    color: #fff;
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+  /*HERO DESKTOP*/
+  .box-sub-hero-left {
+    max-width: 150px;
+    padding: 12px;
+  }
+  .picture_calvin_1 {
+    border-radius: 125px;
+  }
+  .nice-to-meet-you {
+    font-size: 36px;
+  }
+  .box-hero {
+    width: 100%;
+  }
+  /*PROJECTS DESKTOP*/
+  .box-project-item {
+    width: calc(76%/3);
+    margin: 4%;
+    text-align: center;
+    border-radius: 25px;
+  }
+  /*BANNER DESKTOP*/
+  .banner-text {
+    font-size: 36px;
+  }
+  /*EDUCATION DESKTOP*/
+  .container-education {
+    display: flex;
+    flex-wrap: wrap;
+    /*justify-content: space-evenly;*/
+    justify-content: space-between;
+  }
+  .box-education {
+    margin: 2%;
+    width: calc(100% / 3.5);
+    text-align: center;
+  }
+  /*RESUME DESKTOP*/
+  .container-resume {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .box-resume-half {
+    width: 48%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .resume-box-item-inner {
+    margin: 15px;
+    text-align: left;
+  }
+  .resume-heading {
+    font-family: 'Cabin';
+    font-weight: lighter;
+    font-size: 36px;
+  }
+  .resume-sub-heading {
+    font-size: 20px;
+  }
+  .resume-heading {
+    font-family: 'Cabin';
+    font-weight: lighter;
+    font-size: 36px;
+    text-align: left;
+  }
+  .resume-sub-heading {
+    font-size: 20px;
+    text-align: left;
+  }
+  /*CONTACT DESKTOP*/
+  .container-contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+  .contact-item-outer {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 25px;
+    -webkit-transition: 0.5s;
+    width: 8%;
+  }
+  .contact-item-outer:hover {
+    background-color: white;
+  }
+
+}
