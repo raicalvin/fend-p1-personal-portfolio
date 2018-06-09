@@ -69,13 +69,7 @@ img {
   display: flex;
   justify-content: space-around;
 }
-.box-project-item {
-  /*position: relative;*/
-}
 .project-sub-title {
-  /*position: absolute;
-  bottom: 95%;
-  width: 100%;*/
   border-top-right-radius: 15px;
   border-top-left-radius: 15px;
   font-family: 'Comfortaa';
@@ -83,13 +77,12 @@ img {
   padding-left: 4px;
   padding-right: 4px;
 }
-.box-project-item > p {
+.grid-project-item > p {
   color: #222;
   padding-top: 8px;
   padding-bottom: 8px;
   font-size: 18px;
   background-color: white;
-  /*margin-bottom: 2px;*/
   font-weight: normal;
   border-style: solid;
   border-color: white;

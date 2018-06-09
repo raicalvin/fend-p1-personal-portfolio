@@ -39,10 +39,7 @@
   }
   /*PROJECTS PHONE*/
   .grid-project-item {
-    width: 80%;
-    margin: 2%;
-    margin-right: auto;
-    margin-left: auto;
+    width: auto;
     text-align: center;
     border-radius: 25px;
   }
@@ -161,8 +158,6 @@
   }
   /*PROJECTS TABLET*/
   .grid-project-item {
-    width: calc(92%/2);
-    margin: 2%;
     text-align: center;
     border-radius: 25px;
   }
@@ -239,8 +234,9 @@
   .grid-container{
     display: grid;
     grid-template-columns: auto auto auto;
-    /*justify-content: space-between;*/
-    /*justify-content: space-evenly;*/
+    grid-auto-rows: 100%;
+    grid-column-gap: 5%;
+    grid-row-gap: 5%;
   }
   .section-title {
     font-size: 44px;
@@ -272,10 +268,8 @@
   }
   /*PROJECTS DESKTOP*/
   .grid-project-item {
-    width: calc(76%/3);
-    margin: 4%;
-    text-align: center;
     border-radius: 25px;
+    align-self: center | stretch;
   }
   /*BANNER DESKTOP*/
   .banner-text {
